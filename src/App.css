@@ -1,38 +1,135 @@
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter'), url();
+}
+
+
+body {
+  margin: 0;
+}
+
 .App {
-  text-align: center;
+  width: 1600px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  height: 100px;
+  left: 0px;
+  top: 0px;
+
+  background: #003f60;
+}
+
+.logo {
+  margin-left: 200px;
+}
+
+.menu__list {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  list-style-type: none;
+  width: 549px;
+  margin-left: 196px;
+  padding: 0px;
+  gap: 50px;
+}
+
+.menu__link {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.phoneNumber {
+  display: flex;
+  margin-left: 116px;
+  margin-right: 200px;
+  margin-top: 29px;
+  width: 210px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 50px;
+}
+
+.number {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
   color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 32px;
+}
+.preview {
+  height: 650px;
+  background-image: url("./preview.svg");
+  display: grid;
+
 }
 
-.App-link {
-  color: #61dafb;
+.preview__information {
+  width: 1200px;
+  height: 294px;
+  margin-left: 200px;
+  margin-top: 127px;
+  display: grid;
+  /* background-color: aqua; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.preview__tagline {
+  margin-top: 0px;
+  margin-bottom: 13px;
+  width: 1200px;
+  height: 216px;
+  font-family: "Freigeist";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 90px;
+  line-height: 120.02%;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  /* background-color: red; */
+}
+
+.preview__description {
+  width: 610px;
+  height: 48px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.015em;
+  color: #ffffff;
+  /* background-color: black; */
+}
+
+.preview__button {
+  margin-bottom: 50px;
+  width: 247px;
+  height: 61px;
+  background-color: #003f60;
+  border-radius: 50px;
+  margin-left: 200px;
+}
+
+.preview_button-text {
+  font-family: "Freigeist";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #ffffff;
+  margin-left: 60px;
 }
