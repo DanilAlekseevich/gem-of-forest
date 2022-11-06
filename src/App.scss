@@ -1,0 +1,327 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/inter/Inter-Regular.eot");
+  src: local("Inter Regular"), local("Inter-Regular"),
+    url("./fonts/inter/Inter-Regular.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/inter/Inter-Regular.woff2") format("woff2"),
+    url("./fonts/inter/Inter-Regular.woff") format("woff"),
+    url("./fonts/inter/Inter-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Freigeist";
+  src: url("./fonts/freigeist/Freigeist-Bold.eot");
+  src: local("Freigeist Bold Italic"), local("Freigeist-Bold"),
+    url("./fonts/freigeist/Freigeist-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/freigeist/Freigeist-Bold.woff2") format("woff2"),
+    url("./fonts/freigeist/Freigeist-Bold.woff") format("woff"),
+    url("./fonts/freigeist/Freigeist-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Freigeist";
+  src: url("./fonts/freigeist/Freigeist-Medium.eot");
+  src: local("Freigeist Medium"), local("Freigeist-Medium"),
+    url("./fonts/freigeist/Freigeist-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/freigeist/Freigeist-Medium.woff2") format("woff2"),
+    url("./fonts/freigeist/Freigeist-Medium.woff") format("woff"),
+    url("./fonts/freigeist/Freigeist-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Freigeist";
+  src: url("./fonts/freigeist/Freigeist-BoldItalic.eot");
+  src: local("Freigeist Bold Italic"), local("Freigeist-BoldItalic"),
+    url("./fonts/freigeist/Freigeist-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/freigeist/Freigeist-BoldItalic.woff2") format("woff2"),
+    url("./fonts/freigeist/Freigeist-BoldItalic.woff") format("woff"),
+    url("./fonts/freigeist/Freigeist-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/inter/Inter-SemiBold.eot");
+  src: local("Inter Semi Bold"), local("Inter-SemiBold"),
+    url("./fonts/inter/Inter-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/inter/Inter-SemiBold.woff2") format("woff2"),
+    url("./fonts/inter/Inter-SemiBold.woff") format("woff"),
+    url("./fonts/inter/Inter-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/inter/Inter-Medium.eot");
+  src: local("Inter Medium"), local("Inter-Medium"),
+    url("./fonts/inter/Inter-Medium.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/inter/Inter-Medium.woff2") format("woff2"),
+    url("./fonts/inter/Inter-Medium.woff") format("woff"),
+    url("./fonts/inter/Inter-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.App {
+}
+
+.header-container {
+  width: 1600px;
+  margin: 0 auto;
+}
+
+.content-container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  left: 0px;
+  top: 0px;
+
+  background: #003f60;
+}
+
+.logo {
+  margin-left: 200px;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  width: 549px;
+  margin-left: 196px;
+  padding: 0px;
+  gap: 50px;
+}
+
+.menu__link {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.phoneNumber {
+  display: flex;
+  margin-left: 116px;
+  margin-right: 200px;
+  margin-top: 29px;
+  width: 210px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 50px;
+}
+
+.number {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 20px;
+}
+.preview {
+  height: 650px;
+  background-image: url("./images/preview.svg");
+  display: grid;
+}
+
+.preview__information {
+  width: 1200px;
+  height: 294px;
+  margin-left: 200px;
+  margin-top: 127px;
+  display: grid;
+}
+
+.preview__tagline {
+  margin-top: 0px;
+  margin-bottom: 13px;
+  width: 1200px;
+  height: 216px;
+  font-family: "Freigeist";
+  font-style: italic;
+  font-weight: bold;
+  font-size: 90px;
+  line-height: 120.02%;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.preview__description {
+  width: 610px;
+  height: 48px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.015em;
+  color: #ffffff;
+}
+
+.preview__button {
+  margin-bottom: 50px;
+  width: 247px;
+  height: 61px;
+  background-color: #003f60;
+  border-radius: 50px;
+  margin-left: 200px;
+}
+
+.preview_button-text {
+  font-family: "Freigeist";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: #ffffff;
+  margin-left: 45px;
+}
+
+.actions {
+  display: grid;
+
+  .actions__label {
+    margin: 0 auto;
+    margin-top: 160px;
+    font-family: "Freigeist";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 84px;
+    letter-spacing: 0.035em;
+    color: #1e1e1e;
+  }
+
+  .actions__items {
+    display: grid;
+    margin-top: 40px;
+    height: 350px;
+    grid-template-columns: repeat(4, 285px);
+    grid-column-gap: 20px;
+
+    .item1 {
+      display: grid;
+      background-image: url(./images/bath.svg);
+      background-repeat: no-repeat;
+    }
+    .item2 {
+      display: grid;
+      background-image: url(./images/billards.svg);
+      background-repeat: no-repeat;
+    }
+    .item3 {
+      display: grid;
+      background-image: url(./images/gazebos.svg);
+      background-repeat: no-repeat;
+    }
+    .item4 {
+      display: grid;
+      background-image: url(./images/fishing.svg);
+      background-repeat: no-repeat;
+    }
+
+    p {
+      display: grid;
+      font-family: "Freigeist";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      align-self: end;
+      justify-self: center;
+    }
+  }
+}
+
+.about {
+  display: grid;
+  height: 500px;
+  margin-top: 160px;
+  grid-template-columns: repeat(2, 590px);
+  grid-column-gap: 20px;
+
+  .about__information {
+    display: grid;
+    justify-content: start;
+    align-content: start;
+
+    .about__information-title {
+      font-family: "Freigeist";
+      font-style: italic;
+      font-weight: 400;
+      font-size: 70px;
+      line-height: 84px;
+      letter-spacing: 0.035em;
+      color: #1e1e1e;
+    }
+
+    .about__information-description {
+      margin-top: 0px;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 0.015em;
+      color: #000000;
+    }
+  }
+
+  .about__image {
+    display: grid;
+    background-image: url(./images/aboutImage.svg);
+  }
+}
+
+.feedbacks {
+  margin-top: 160px;
+  height: 575px;
+  grid-template-columns: 1fr;
+  display: grid;
+
+  .feedbacks__title {
+    justify-self: center;
+    font-family: "Freigeist";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 84px;
+    letter-spacing: 0.035em;
+    color: #1e1e1e;
+  }
+}
+
+.stocks {
+  display: grid;
+
+}

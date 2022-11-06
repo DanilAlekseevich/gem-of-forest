@@ -1,0 +1,23 @@
+.houses {
+  margin-top: 145px;
+  display: grid;
+  height: 890px;
+
+  .houses__label {
+    margin: 0 auto;
+    font-family: "Freigeist";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 84px;
+    letter-spacing: 0.035em;
+    color: #1e1e1e;
+  }
+
+
+  .houses__house {
+    background-color: yellow;
+    width: 590px;
+    height: 765px;
+  }
+}
