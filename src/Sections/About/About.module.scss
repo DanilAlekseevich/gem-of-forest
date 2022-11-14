@@ -1,0 +1,36 @@
+.about {
+  background-color: #FDF9F9;
+  padding-top: 160px;
+
+  img {
+    width: 590px;
+    height: 500px;
+    border-radius: 30px;
+    margin-left: 20px;
+  }
+
+  :global {
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  div {
+    :global {
+      .title {
+        text-align: left;
+        margin-bottom: 30px;
+      }
+    }
+
+    p {
+      font-family: 'Inter';
+      font-size: 18px;
+      line-height: 24px;
+      color: black;
+      margin-bottom: 25px;
+    }
+  }
+}

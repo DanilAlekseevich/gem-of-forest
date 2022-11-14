@@ -4,6 +4,7 @@ import { Header } from './components/Header';
 import { Main } from './Sections/Main';
 import { Actions } from './Sections/Actions';
 import { Houses } from './Sections/Houses';
+import { About } from './Sections/About';
 import './sass/app.scss';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Main />
       <Actions />
       <Houses />
+      <About />
     </div>
   );
 }
