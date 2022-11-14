@@ -1,19 +1,13 @@
 .actions {
-  background-color: #fff;
+  background-color: #FDF9F9;
   padding-top: 160px;
 
   &Items {
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
-
-    @media (max-width: 1020px) {
-      margin-top: 35px;
-    }
 
     @media (max-width: 640px) {
       flex-wrap: wrap;
-      margin-top: 30px;
     }
 
     @media (max-width: 320px) {

@@ -1,0 +1,61 @@
+@import '../../sass/variables';
+
+.house {
+  width: 591px;
+  max-height: 750px;
+  background-color: #fff;
+  border-radius: 35px;
+  padding-bottom: 35px;
+  
+  img {
+    width: 100%;
+    border-radius: 35px;
+    margin-bottom: 20px;
+  }
+
+  &Text {
+    margin: 0 62px 0 35px;
+
+    h4 {
+      font-family: 'Freigeist';
+      font-size: 36px;
+      color: $black;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-family: 'Inter';
+      font-weight: 400px;
+      font-size: 18px;
+      color: $black;
+      margin-bottom: 15px;
+    }
+
+    button {
+      background-color: $blue;
+      font-family: 'Freigeist';
+      font-size: 20px;
+      color: #fff;
+      padding: 18px 65px;
+      border: none;
+      margin-top: 35px;
+      border-radius: 30px;
+    }
+  }
+
+  &Capacity {
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 18px;
+    color: $blue;
+  }
+
+  &Price {
+    font-family: 'Inter';
+    font-weight: 400px;
+    font-size: 18px;
+    color: $black;
+    margin-bottom: 5px;
+  }
+
+}
