@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "Inter";
+  src: url('../assets/fonts/inter/Inter-Regular.eot');
+  src: local("Inter Regular"), local("Inter-Regular"),
+  url("../assets/fonts/inter/Inter-Regular.eot?#iefix") format("embedded-opentype"),
+  url("../assets/fonts/inter/Inter-Regular.woff2") format("woff2"),
+  url("../assets/fonts/inter/Inter-Regular.woff") format("woff"),
+  url("../assets/fonts/inter/Inter-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Freigeist";
+  src: url("../assets/fonts/freigeist/Freigeist-Bold.eot");
+  src: local("Freigeist Bold Italic"), local("Freigeist-Bold"),
+  url("../assets/fonts/freigeist/Freigeist-Bold.eot?#iefix") format("embedded-opentype"),
+  url("../assets/fonts/freigeist/Freigeist-Bold.woff2") format("woff2"),
+  url("../assets/fonts/freigeist/Freigeist-Bold.woff") format("woff"),
+  url("../assets/fonts/freigeist/Freigeist-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Freigeist";
+  src: url("../assets/fonts/freigeist/Freigeist-Medium.eot");
+  src: local("Freigeist Medium"), local("Freigeist-Medium"),
+  url("../assets/fonts/freigeist/Freigeist-Medium.eot?#iefix") format("embedded-opentype"),
+  url("../assets/fonts/freigeist/Freigeist-Medium.woff2") format("woff2"),
+  url("../assets/fonts/freigeist/Freigeist-Medium.woff") format("woff"),
+  url("../assets/fonts/freigeist/Freigeist-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Freigeist";
+  src: url("../assets/fonts/freigeist/Freigeist-BoldItalic.eot");
+  src: local("Freigeist Bold Italic"), local("Freigeist-BoldItalic"),
+  url("../assets/fonts/freigeist/Freigeist-BoldItalic.eot?#iefix") format("embedded-opentype"),
+  url("../assets/fonts/freigeist/Freigeist-BoldItalic.woff2") format("woff2"),
+  url("../assets/fonts/freigeist/Freigeist-BoldItalic.woff") format("woff"),
+  url("../assets/fonts/freigeist/Freigeist-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/inter/Inter-SemiBold.eot");
+  src: local("Inter Semi Bold"), local("Inter-SemiBold"),
+  url("../assets/fonts/inter/Inter-SemiBold.eot?#iefix") format("embedded-opentype"),
+  url("../assets/fonts/inter/Inter-SemiBold.woff2") format("woff2"),
+  url("../assets/fonts/inter/Inter-SemiBold.woff") format("woff"),
+  url("../assets/fonts/inter/Inter-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/inter/Inter-Medium.eot");
+  src: local("Inter Medium"), local("Inter-Medium"),
+  url("../assets/fonts/inter/Inter-Medium.eot?#iefix") format("embedded-opentype"),
+  url("../assets/fonts/inter/Inter-Medium.woff2") format("woff2"),
+  url("../assets/fonts/inter/Inter-Medium.woff") format("woff"),
+  url("../assets/fonts/inter/Inter-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}

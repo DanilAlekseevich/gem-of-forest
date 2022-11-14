@@ -1,0 +1,45 @@
+@import './normalize';
+@import './variables';
+@import './fonts';
+
+.container {
+  width: calc(100vw - 25vw);
+  margin: 0 auto;
+
+  @media (max-width: 1020px) {
+    width: calc(100vw - 80px);
+  }
+
+  @media (max-width: 640px) {
+    width: calc(100vw - 40px);
+  }
+
+  @media (max-width: 320px) {
+    width: calc(100vw - 20px);
+  }
+}
+
+.title {
+  color: $black;
+  font-family: 'Freigeist';
+  font-weight: 400;
+  font-size: 70px;
+  font-style: italic;
+  text-align: center;
+  line-height: 70px;
+
+  @media (max-width: 1020px) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
