@@ -1,10 +1,10 @@
 .houses {
-  margin-top: 145px;
-  display: grid;
   height: 890px;
+  display: grid;
+  justify-items: center;
+
 
   .houses__label {
-    margin: 0 auto;
     font-family: "Freigeist";
     font-style: italic;
     font-weight: 400;
@@ -16,8 +16,74 @@
 
 
   .houses__house {
-    background-color: yellow;
     width: 590px;
     height: 765px;
+
+    background: #FFFFFF;
+    box-shadow: 4px 4px 100px rgba(55, 55, 55, 0.2);
+    border-radius: 42px;
+
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 350px 320px 105px;
+
+    .houses__house__image-slider {
+      background-color: black;
+    }
+
+    .houses__house__information {
+      display: grid;
+
+      margin-left: 35px;
+      margin-right: 35px;
+
+      .houses__house__information-title {
+        font-family: 'Freigeist';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 46px;
+      }
+
+      .houses__house__information-people {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 135.02%;
+        letter-spacing: 0.015em;
+        color: #003F60;
+      }
+
+      .houses__house__information-description {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.015em;
+        color: #1E1E1E;
+      }
+    }
+
+
+    .reserve__button {
+      background-color: #003f60;
+      width: 285px;
+      height: 60px;
+      border: none;
+      border-radius: 30px;
+
+      align-self: end;
+      margin-left: 35px;
+      margin-bottom: 35px;
+
+      font-family: 'Freigeist';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 25px;
+      color: #FFFFFF;
+    }
   }
 }
