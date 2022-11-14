@@ -1,0 +1,44 @@
+.route {
+  display: grid;
+  justify-content: center;
+
+  .route__label {
+    font-family: 'Freigeist';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 84px;
+    letter-spacing: 0.035em;
+    color: #1E1E1E;
+
+    justify-self: center;
+  }
+
+  .route__information {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .route__description {
+      justify-self: start;
+
+      font-family: 'Freigeist';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 31px;
+      color: #1E1E1E;
+    }
+
+    .route__location {
+      justify-self: end;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 0.015em;
+      color: #1E1E1E;
+    }
+  }
+
+}

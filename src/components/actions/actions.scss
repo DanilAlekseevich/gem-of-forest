@@ -1,0 +1,36 @@
+.actions {
+  display: grid;
+  justify-content: center;
+
+  .actions__label {
+    justify-self: center;
+
+    font-family: "Freigeist";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 84px;
+    letter-spacing: 0.035em;
+    color: #1e1e1e;
+  }
+
+  .actions__items {
+    display: grid;
+    justify-items: center;
+    height: 350px;
+    grid-template-columns: repeat(4, 285px);
+    grid-column-gap: 20px;
+
+    .actions__item {
+      display: grid;
+    }
+
+    p {
+      justify-self: center;
+      font-family: "Freigeist";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+    }
+  }
+}
