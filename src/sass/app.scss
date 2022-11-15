@@ -1,6 +1,7 @@
 @import './normalize';
 @import './variables';
 @import './fonts';
+@import './mixins';
 
 .container {
   width: calc(100vw - 25vw);

@@ -1,10 +1,14 @@
+@import '../../sass/mixins';
+@import '../../sass/variables';
+
 .houses {
-  background-color: #FDF9F9;
-  padding-top: 160px;
+  background-color: $bac;
+  @include pad-t-section;
 
   &Items {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
+    overflow: hidden;
   }
 }

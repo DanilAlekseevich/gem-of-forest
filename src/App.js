@@ -13,7 +13,7 @@ function App() {
       <Header />
       <Main />
       <Actions />
-      <Houses />
+      {/* <Houses /> */}
       <About />
     </div>
   );
