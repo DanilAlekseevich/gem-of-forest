@@ -5,6 +5,7 @@ import { Main } from './Sections/Main';
 import { Actions } from './Sections/Actions';
 import { Houses } from './Sections/Houses';
 import { About } from './Sections/About';
+import { Review } from './Sections/Review';
 import './sass/app.scss';
 
 function App() {
@@ -13,8 +14,9 @@ function App() {
       <Header />
       <Main />
       <Actions />
-      {/* <Houses /> */}
+      {/* <Houses />  */}
       <About />
+      {/* <Review /> */}
     </div>
   );
 }
