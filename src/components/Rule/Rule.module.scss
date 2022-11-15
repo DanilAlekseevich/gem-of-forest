@@ -1,0 +1,42 @@
+@import '../../sass/mixins';
+@import '../../sass/variables';
+
+.rule {
+  border-bottom: 1px solid $black;
+  padding: 15px 0;
+
+  &Header {
+    display: flex;
+    justify-content: space-between;
+
+    h3 {
+      font-family: 'Freigeist';
+      font-size: 24px;
+      color: $black;
+    }
+
+    button {
+      background-color: $blue;
+      border: none;
+      border-radius: 100%;
+      width: 21px;
+      height: 21px;
+
+      svg {
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+
+  p {
+    font-family: 'Inter';
+    font-size: 18px;
+    line-height: 24px;
+    color: black;
+    padding-top: 15px;
+  }
+
+  .active {
+    transform: rotate(45deg) translateX(0.75px);
+  }
+}

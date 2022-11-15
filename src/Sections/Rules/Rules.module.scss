@@ -1,0 +1,12 @@
+@import '../../sass/mixins';
+@import '../../sass/variables';
+
+.rules {
+  background-color: $bac;
+  @include pad-t-section;
+
+  &Wrapper {
+    border-top: 1px solid $black;
+    margin-bottom: 30px;
+  }
+}

@@ -7,6 +7,9 @@ import { Houses } from './Sections/Houses';
 import { About } from './Sections/About';
 import { Review } from './Sections/Review';
 import { Promo } from './Sections/Promo';
+import { Gallery } from './Sections/Gallery';
+import { Way } from './Sections/Way';
+import { Rules } from './Sections/Rules';
 import './sass/app.scss';
 
 function App() {
@@ -19,6 +22,9 @@ function App() {
       <About />
       {/* <Review /> */}
       <Promo />
+      {/* <Gallery /> */}
+      <Way />
+      <Rules />
     </div>
   );
 }
