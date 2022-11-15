@@ -10,6 +10,7 @@ import { Promo } from './Sections/Promo';
 import { Gallery } from './Sections/Gallery';
 import { Way } from './Sections/Way';
 import { Rules } from './Sections/Rules';
+import { Footer } from './components/Footer';
 import './sass/app.scss';
 
 function App() {
@@ -18,13 +19,14 @@ function App() {
       <Header />
       <Main />
       <Actions />
-      {/* <Houses />  */}
+      <Houses />
       <About />
-      {/* <Review /> */}
+      <Review />
       <Promo />
-      {/* <Gallery /> */}
+      <Gallery />
       <Way />
       <Rules />
+      <Footer />
     </div>
   );
 }
