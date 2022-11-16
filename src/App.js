@@ -11,12 +11,14 @@ import { Gallery } from './Sections/Gallery';
 import { Way } from './Sections/Way';
 import { Rules } from './Sections/Rules';
 import { Footer } from './components/Footer';
+import { Modal } from './components/Modal';
 import './sass/app.scss';
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Modal />
+      {/* <Header />
       <Main />
       <Actions />
       <Houses />
@@ -26,7 +28,7 @@ function App() {
       <Gallery />
       <Way />
       <Rules />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
