@@ -46,6 +46,14 @@
       font-style: normal;
       line-height: 24px;
     }
+
+    @media (max-width: 590px) {
+      // max-width: 150px;
+      a, address {
+        font-size: 12px;
+        text-align: right;
+      }
+    }
   }
 
   :global {
@@ -66,7 +74,9 @@
     }
 
     &Info {
-      text-align: center;
+      a, address {
+        text-align: center;
+      }
     }
     :global {
       .container {

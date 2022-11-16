@@ -19,11 +19,15 @@
     width: calc(100vw - 10vh);
   }
 
+  @media (max-width: 1050px) {
+    width: calc(100vw - 5vh);
+  }
+
   @media (max-width: 1020px) {
     width: calc(100vw - 80px);
   }
   
-  @media (max-width: 940px) {
+  @media (max-width: 950px) {
     width: calc(100vw - 75px);
   }
 

@@ -16,10 +16,10 @@
       height: 414px;
     }
 
-    @media (max-width: 640px) {
-      width: 600px;
-      height: 400px;
-      margin-left: 0;
+    @media (max-width: 940px) {
+      display: block;
+      width: 100%;
+      margin: 0;
     }
 
     @media (max-width: 320px) {
@@ -62,7 +62,7 @@
     }
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: 940px) {
     :global {
       .container {
         display: block;

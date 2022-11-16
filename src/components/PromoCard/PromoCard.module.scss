@@ -1,5 +1,5 @@
 .promoCard {
-  width: 591px;
+  width: calc(98% / 2);
   height: 360px;
   padding: 30px;
   border-radius: 40px;
@@ -15,7 +15,7 @@
   }
 
   @media (max-width: 1020px) {
-    width: 460px;
+    width: calc(98% / 2);
     height: 300px;
 
     div {
