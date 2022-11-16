@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 
 import { ReactComponent as MainLogo } from '../../assets/img/mainLogo.svg';
-import { ReactCompontns as MenuIcon } from '../../assets/testmenu.svg';
-import { ReactCompontns as CloseIcon } from '../../assets/testclose.svg';
+import { ReactComponent as MenuIcon } from '../../assets/testmenu.svg';
+import { ReactComponent as CloseIcon } from '../../assets/testclose.svg';
 
 import styles from './Header.module.scss';
 
 export function Header() {
-  const [opened, setOpened] = useState(false);
+  const [opened, setOpened] = useState(true);
 
   const onClickHamburger = () => {
     setOpened((prev) => !prev);
@@ -34,18 +34,16 @@ export function Header() {
             <li>
               <a href="#contacts">Контакты</a>
             </li>
+            <li>
+              <a className={styles.headerPhone} href="tel:+79176059706">
+                +7 (917) 605-97-06
+              </a>
+            </li>
           </ul>
-          <div
-            onClick={onClickHamburger}
-            className={`${styles.headerHamburger} ${opened ? styles.headerHamburgerActive : ''}`}>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
         </nav>
-        <a className={styles.headerPhone} href="tel:+79176059706">
-          +7 (917) 605-97-06
-        </a>
+        <div className={styles.headerMenu} onClick={onClickHamburger}>
+          {opened ? <CloseIcon /> : <MenuIcon />}
+        </div>
       </div>
     </header>
   );
