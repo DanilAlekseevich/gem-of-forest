@@ -19,7 +19,7 @@ export function Houses() {
   };
 
   return (
-    <section className={styles.houses}>
+    <section className={styles.houses} id="houses">
       <div className="container">
         <Title text="Дома" />
         <div className={styles.housesItems}>

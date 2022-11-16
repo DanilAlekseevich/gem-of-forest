@@ -8,7 +8,7 @@ import styles from './Footer.module.scss';
 
 export function Footer() {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} id="contacts">
       <div className="container">
         <MainLogo />
         <div className={styles.footerSocial}>

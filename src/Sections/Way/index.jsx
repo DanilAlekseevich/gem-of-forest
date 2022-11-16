@@ -6,7 +6,7 @@ import styles from './Way.module.scss';
 
 export function Way() {
   return (
-    <section className={styles.way}>
+    <section className={styles.way} id="way">
       <div className="container">
         <Title text="Как добраться" />
         <div className={styles.wayText}>

@@ -33,7 +33,7 @@ export function Rules() {
   ];
 
   return (
-    <section className={styles.rules}>
+    <section className={styles.rules} id="rules">
       <div className="container">
         <Title text="Правила пребывания" />
         <div className={styles.rulesWrapper}>

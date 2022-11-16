@@ -1,33 +1,43 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { ReactComponent as MainLogo } from '../../assets/img/mainLogo.svg';
+import { ReactCompontns as MenuIcon } from '../../assets/testmenu.svg';
+import { ReactCompontns as CloseIcon } from '../../assets/testclose.svg';
 
 import styles from './Header.module.scss';
 
 export function Header() {
+  const [opened, setOpened] = useState(false);
+
+  const onClickHamburger = () => {
+    setOpened((prev) => !prev);
+  };
+
   return (
     <header className={styles.header}>
       <div className="container">
         <MainLogo />
         <nav>
-          <ul>
+          <ul className={`${styles.headerLinks} ${opened ? styles.headerLinksActive : ''}`}>
             <li>
-              <a href="#">Дома</a>
+              <a href="#houses">Дома</a>
             </li>
             <li>
-              <a href="#">О нас</a>
+              <a href="#about">О нас</a>
             </li>
             <li>
-              <a href="#">Правила</a>
+              <a href="#rules">Правила</a>
             </li>
             <li>
-              <a href="#">Маршрут</a>
+              <a href="#way">Маршрут</a>
             </li>
             <li>
-              <a href="#">Контакты</a>
+              <a href="#contacts">Контакты</a>
             </li>
           </ul>
-          <div className={styles.headerHamburger}>
+          <div
+            onClick={onClickHamburger}
+            className={`${styles.headerHamburger} ${opened ? styles.headerHamburgerActive : ''}`}>
             <span></span>
             <span></span>
             <span></span>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { ReactComponent as Open } from '../../assets/pnd.svg';
+import { ReactComponent as Open } from '../../assets/plus.svg';
 
 import styles from './Rule.module.scss';
 
