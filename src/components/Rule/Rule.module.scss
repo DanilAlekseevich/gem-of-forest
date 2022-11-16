@@ -8,6 +8,7 @@
   &Header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     h3 {
       font-family: 'Freigeist';
@@ -39,5 +40,17 @@
 
   .active {
     transform: rotate(45deg) translateX(0.75px);
+  }
+
+  @media (max-width: 320px) {
+    &Header {
+      h3 {
+        font-size: 18px;
+      }
+    }
+
+    p {
+      font-size: 16px;
+    }
   }
 }

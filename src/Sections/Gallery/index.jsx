@@ -14,11 +14,11 @@ export function Gallery() {
       <div className="container">
         <Title text="Галерея" />
         <div className={styles.galleryWrapper}>
-          <img src={smallOne} alt="Фото" />
-          <img src={smallTwo} alt="Фото" />
-          <img src={mediumOne} alt="Фото" />
-          <img src={mediumTwo} alt="Фото" />
-          <img src={long} alt="Фото" />
+          <img src={smallOne} id="first" alt="Фото" />
+          <img src={smallTwo} id="second" alt="Фото" />
+          <img src={mediumOne} id="third" alt="Фото" />
+          <img src={mediumTwo} id="fourth" alt="Фото" />
+          <img src={long} id="fifth" alt="Фото" />
         </div>
       </div>
     </section>

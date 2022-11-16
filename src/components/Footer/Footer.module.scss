@@ -55,4 +55,25 @@
       align-items: center;
     }
   }
+
+  @media (max-width: 320px) {
+    svg {
+      width: 130px;
+    }
+
+    &Social {
+      margin: 15px 0;
+    }
+
+    &Info {
+      text-align: center;
+    }
+    :global {
+      .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
 }

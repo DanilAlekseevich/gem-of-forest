@@ -6,12 +6,22 @@
   @include pad-t-section;
 
   &Wrapper {
-    // height: 1540px;
-    // display: grid;
-    // grid-template: repeat(4, 1fr) / repeat(2, 1fr);
-    // grid-auto-rows: min-content;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+
+    img {
+      width: 590px;
+    }
+
+    img:last-child {
+      width: 100%;
+    }
+
+    @media (max-width: 1020px) {
+      img {
+        width: 460px;
+      }
+    }
   }
 }
