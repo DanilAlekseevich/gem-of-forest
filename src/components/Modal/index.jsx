@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 
+import { ReactComponent as CloseIcon } from '../../assets/testclose.svg';
 import styles from './Modal.module.scss';
 
 export function Modal() {
+  const [visible, setVisible] = useState(true);
+
+  const onClose = () => {
+    setVisible((prev) => !prev);
+  };
+
   return (
-    <div className={styles.overlay}>
+    <div className={`${styles.overlay} ${visible ? styles.overlayActive : ''}`}>
       <div className={styles.modal}>
+        <CloseIcon onClick={onClose} />
         <h3>Оставить заявку на бронь</h3>
         <form>
           <label>
