@@ -1,37 +1,46 @@
-import "./App.scss";
+import React, { useState } from 'react';
 
-import Route from "./components/route/Route";
-import Header from "./components/header/Header";
-import Houses from "./components/houses/Houses";
-import Footer from "./components/footer/Footer";
-import Preview from "./components/preview/Preview";
-import Actions from "./components/actions/Actions";
-import About from "./components/about/About";
-import Rules from "./components/rules/Rules";
+import { Header } from './components/Header';
+import { Main } from './Sections/Main';
+import { Actions } from './Sections/Actions';
+import { Houses } from './Sections/Houses';
+import { About } from './Sections/About';
+import { Review } from './Sections/Review';
+import { Promo } from './Sections/Promo';
+import { Gallery } from './Sections/Gallery';
+import { Way } from './Sections/Way';
+import { Rules } from './Sections/Rules';
+import { Footer } from './components/Footer';
+import { Modal } from './components/Modal';
+import './sass/app.scss';
 
-export function App() {
-    return (
-        <div className="App">
+function App() {
+  const [modalOpen, setModalOpen] = useState(false);
 
-            <Header/>
+  const closeModal = () => {
+    setModalOpen(false);
+  }
 
-            <Preview/>
+  const showModal = () => {
+    setModalOpen(true);
+  }
 
-            <Actions/>
-
-            {/*<Houses/>*/}
-
-            <About/>
-
-            {/*<div className="feedbacks">*/}
-            {/*    <p className="feedbacks__title">Отзывы</p>*/}
-            {/*</div>*/}
-
-            <Route/>
-
-            <Rules/>
-
-            <Footer/>
-        </div>
-    );
+  return (
+    <div className="App">
+      <Modal open={modalOpen} close={closeModal} />
+      <Header />
+      <Main showModal={showModal} />
+      <Actions />
+      <Houses />
+      <About />
+      <Review />
+      <Promo />
+      <Gallery />
+      <Way />
+      <Rules />
+      <Footer />
+    </div>
+  );
 }
+
+export default App;

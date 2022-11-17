@@ -1,0 +1,37 @@
+@import '../../sass/variables';
+
+.way {
+  &Text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    h4 {
+      width: 481px;
+      font-family: 'Freigeist';
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    address {
+      width: 285px;
+      font-family: 'Inter';
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    @media (max-width: 320px) {
+      flex-direction: column;
+      
+      h4 {
+        font-size: 20px;
+        width: 100%;
+        margin-bottom: 15px;
+      }
+
+      address {
+        font-size: 16px;
+      }
+    }
+  }
+}

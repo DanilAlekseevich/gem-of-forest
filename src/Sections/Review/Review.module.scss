@@ -1,0 +1,8 @@
+@import '../../sass/variables';
+
+.review {
+  &Wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}

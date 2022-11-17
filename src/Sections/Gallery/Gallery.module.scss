@@ -1,0 +1,23 @@
+@import '../../sass/variables';
+
+.gallery {
+  &Wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    img {
+      width: calc((100% - 20px) / 2);
+    }
+
+    img:last-child {
+      width: 100%;
+    }
+
+    @media (max-width: 1020px) {
+      img {
+        max-width: 460px;
+      }
+    }
+  }
+}

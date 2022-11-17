@@ -1,0 +1,9 @@
+@import '../../sass/variables';
+
+.promo {
+  &Wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

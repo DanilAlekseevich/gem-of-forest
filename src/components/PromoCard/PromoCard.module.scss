@@ -1,0 +1,48 @@
+.promoCard {
+  width: calc(98% / 2);
+  height: 360px;
+  padding: 30px;
+  border-radius: 40px;
+
+  div {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 40px;
+    font-family: 'Freigeist';
+    font-size: 20px;
+    color: white;
+  }
+
+  @media (max-width: 1020px) {
+    width: calc(98% / 2);
+    height: 300px;
+
+    div {
+      font-size: 18px;
+      padding: 5px;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 640px) {
+    width: 100%;
+    height: 360px;
+    margin-bottom: 20px;
+    padding: 15px;
+
+    div {
+      font-size: 20px;
+      padding: 10px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    height: 180px;
+    border-radius: 20px;
+
+    div {
+      font-size: 14px;
+    }
+  }
+}
