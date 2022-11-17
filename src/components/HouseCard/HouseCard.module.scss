@@ -1,7 +1,10 @@
 @import '../../sass/variables';
+@import '../../sass/mixins';
 
 .house {
   width: 591px;
+  position: relative;
+  // width: calc(100% / 2);
   max-height: 750px;
   background-color: #fff;
   border-radius: 35px;
@@ -32,14 +35,9 @@
     }
 
     button {
-      background-color: $blue;
-      font-family: 'Freigeist';
-      font-size: 20px;
-      color: #fff;
+      @include btn;
       padding: 18px 65px;
-      border: none;
       margin-top: 35px;
-      border-radius: 30px;
     }
   }
 
@@ -56,6 +54,34 @@
     font-size: 18px;
     color: $black;
     margin-bottom: 5px;
+  }
+
+  :global {
+
+    .slick-arrow {
+      top: 50%;
+      z-index: 1;
+    }
+
+    .slick-prev {
+      left: 2%;
+
+      &:before {
+        opacity: 1;
+      }
+    }
+
+    .slick-next {
+      right: 2%;
+
+      &:before {
+        opacity: 1;
+      }
+    }
+
+    .slick-list {
+      border-radius: 30px;
+    }
   }
 
 }

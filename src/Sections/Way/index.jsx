@@ -18,7 +18,8 @@ export function Way() {
         <YMaps>
           <Map
             defaultState={{ center: [54.220996, 48.554571], zoom: 13 }}
-            className={styles.wayMap}>
+            height="400px"
+            width="100%">
             <Placemark geometry={[54.220996, 48.554571]} />
           </Map>
         </YMaps>

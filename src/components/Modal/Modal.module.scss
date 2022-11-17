@@ -1,10 +1,11 @@
 @import '../../sass/variables';
+@import '../../sass/mixins';
 
 .overlay {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -29,6 +30,7 @@
       height: 40px;
       top: 0;
       right: 0;
+      cursor: pointer;
 
       polygon {
         fill: $black;
@@ -64,12 +66,9 @@
       }
 
       button {
-        font-size: 20px;
-        color: $white;
-        background-color: $blue;
+        @include btn;
         padding: 15px;
         margin-top: 10px;
-        border-radius: 30px;
       }
     }
 

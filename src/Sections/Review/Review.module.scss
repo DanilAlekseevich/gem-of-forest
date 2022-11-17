@@ -1,10 +1,6 @@
 @import '../../sass/variables';
-@import '../../sass/mixins';
 
 .review {
-  background-color: $bac;
-  @include pad-t-section;
-
   &Wrapper {
     display: flex;
     justify-content: space-between;

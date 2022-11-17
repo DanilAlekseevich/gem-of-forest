@@ -1,4 +1,5 @@
 @import '../../sass/variables';
+@import '../../sass/mixins';
 
 .main {
   background: url('../../assets/img/mainBg.png') center (center / cover) no-repeat;
@@ -52,11 +53,8 @@
   }
 
   button {
-    background-color: $blue;
+    @include btn;
     padding: 18px 46px;
-    border: none;
-    border-radius: 50px;
-    font-size: 20px;
     margin-top: 35px;
 
     @media (max-width: 320px) {

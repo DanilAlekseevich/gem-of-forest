@@ -1,13 +1,16 @@
 import React from 'react';
+import Slider from 'react-slick';
 
 import styles from './HouseCard.module.scss';
 
-export function HouseCard({ house }) {
-  const { title, img, capacity, descr, cost } = house;
-
+export function HouseCard({ title, imgs, capacity, descr, cost }) {
   return (
     <div className={styles.house}>
-      <img src={img} alt="Дом" />
+      <Slider>
+        {imgs.map((img) => (
+          <img src={img} alt="Дом" />
+        ))}
+      </Slider>
       <div className={styles.houseText}>
         <h4>{title}</h4>
         <div className={styles.houseCapacity}>Вместимость: {capacity} человек</div>

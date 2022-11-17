@@ -3,6 +3,14 @@
 @import './fonts';
 @import './mixins';
 
+body {
+  background-color: $bac;
+}
+
+section {
+  @include mar-t-section;
+}
+
 .container {
   width: calc(100vw - 25vw);
   margin: 0 auto;

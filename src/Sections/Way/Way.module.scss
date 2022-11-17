@@ -1,10 +1,6 @@
 @import '../../sass/variables';
-@import '../../sass/mixins';
 
 .way {
-  background-color: $bac;
-  @include pad-t-section;
-
   &Text {
     display: flex;
     justify-content: space-between;
@@ -38,9 +34,4 @@
       }
     }
   }
-
-  &Map {
-    width: 100%;
-  }
-
 }

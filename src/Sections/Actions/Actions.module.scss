@@ -1,10 +1,6 @@
-@import '../../sass/mixins';
 @import '../../sass/variables';
 
 .actions {
-  background-color: $bac;
-  @include pad-t-section;
-
   &Items {
     display: flex;
     justify-content: space-between;

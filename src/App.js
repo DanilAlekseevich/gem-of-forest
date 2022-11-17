@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Header } from './components/Header';
 import { Main } from './Sections/Main';
@@ -15,11 +15,21 @@ import { Modal } from './components/Modal';
 import './sass/app.scss';
 
 function App() {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const closeModal = () => {
+    setModalOpen(false);
+  }
+
+  const showModal = () => {
+    setModalOpen(true);
+  }
+
   return (
     <div className="App">
-      <Modal />
-      {/* <Header />
-      <Main />
+      <Modal open={modalOpen} close={closeModal} />
+      <Header />
+      <Main showModal={showModal} />
       <Actions />
       <Houses />
       <About />
@@ -28,7 +38,7 @@ function App() {
       <Gallery />
       <Way />
       <Rules />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }
