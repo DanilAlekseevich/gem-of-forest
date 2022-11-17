@@ -5,3 +5,7 @@ services:
     container_name: react
     build:
       context: '.'
+    volumes:
+      - './:/usr/share/nginx/html'
+    ports:
+      - '80:80'
