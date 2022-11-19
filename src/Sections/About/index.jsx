@@ -3,6 +3,8 @@ import React from 'react';
 import { Title } from '../../components/Title';
 import styles from './About.module.scss';
 
+import aboutImg from '../../assets/img/about.png'
+
 export function About() {
   return (
     <section className={styles.about} id="about">
@@ -23,7 +25,7 @@ export function About() {
             различных форматов отдыха.
           </p>
         </div>
-        <img src="https://log-house.ru/wp-content/uploads/2019/10/Admin_173_2-4.jpg" alt="О нас" />
+        <img src={aboutImg} alt="О нас" />
       </div>
     </section>
   );
