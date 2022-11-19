@@ -1,22 +1,15 @@
-FROM node:lts-alpine as prod
+FROM node:lts-alpine
+
+RUN yarn global add serve
 
 WORKDIR /app
 
-COPY package*.json ./
+COPY package.json yarn.lock ./
 
-RUN npm install
+RUN yarn
 
 COPY . .
 
-RUN npm run build
+RUN yarn build
 
-
-FROM nginx:1.20-alpine
-
-WORKDIR /usr/share/nginx/html
-
-COPY --from=prod /app/build .
-
-EXPOSE 80
-
-ENTRYPOINT ["nginx", "-g", "daemon off;"]
+CMD serve -s /app/build
