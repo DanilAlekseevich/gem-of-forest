@@ -7,7 +7,7 @@ import { ReactComponent as CloseIcon } from '../../assets/testclose.svg';
 import styles from './Header.module.scss';
 
 export function Header() {
-  const [opened, setOpened] = useState(true);
+  const [opened, setOpened] = useState(false);
 
   const onClickHamburger = () => {
     setOpened((prev) => !prev);
