@@ -3,10 +3,10 @@ import React, { useState } from 'react';
 import { Header } from './components/Header';
 import { Main } from './Sections/Main';
 import { Actions } from './Sections/Actions';
-// import { Houses } from './Sections/Houses';
+import { Houses } from './Sections/Houses';
 import { About } from './Sections/About';
-// import { Review } from './Sections/Review';
-// import { Promo } from './Sections/Promo';
+import { Review } from './Sections/Review';
+import { Promo } from './Sections/Promo';
 import { Gallery } from './Sections/Gallery';
 import { Way } from './Sections/Way';
 import { Rules } from './Sections/Rules';
@@ -31,10 +31,10 @@ function App() {
       <Header />
       <Main showModal={showModal} />
       <Actions />
-      {/*<Houses />*/}
+      <Houses />
       <About />
-      {/*<Review />*/}
-      {/*<Promo />*/}
+      <Review />
+      <Promo />
       <Gallery />
       <Way />
       <Rules />

@@ -42,17 +42,19 @@
     }
 
     .slick-prev {
-      left: 2%;
+      left: 2% !important;
 
       &:before {
+        color: $white !important;
         opacity: 1;
       }
     }
 
     .slick-next {
-      right: 2%;
+      right: 2% !important;
 
       &:before {
+        color: $white !important;
         opacity: 1;
       }
     }

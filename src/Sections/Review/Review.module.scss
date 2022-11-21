@@ -5,4 +5,43 @@
     display: flex;
     justify-content: space-between;
   }
+
+  :global {
+    .slick-slider {
+      width: 100%;
+    }
+
+    .slick-arrow {
+      top: 50%;
+      z-index: 1;
+    }
+
+    .slick-prev {
+      left: -3%;
+      width: 30px;
+      height: 30px;
+
+      &:before {
+        color: $blue;
+        font-size: 30px;
+        opacity: 1;
+      }
+    }
+
+    .slick-next {
+      right: -3%;
+      width: 30px;
+      height: 30px;
+
+      &:before {
+        color: $blue;
+        font-size: 30px;
+        opacity: 1;
+      }
+    }
+
+    .slick-list {
+      border-radius: 30px;
+    }
+  }
 }
