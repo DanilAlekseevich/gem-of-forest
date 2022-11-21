@@ -8,6 +8,7 @@ import styles from './Houses.module.scss';
 export function Houses() {
   const houses = [
     {
+      id: 1,
       title: 'Дом 1 большой',
       imgs: [
         'https://gde.ru/images/img_ru/474x354/4f/bf/4fbf5dd8be584c0a2124b9534ac923ce.jpg',
@@ -24,6 +25,7 @@ export function Houses() {
       },
     },
     {
+      id: 2,
       title: 'Дом 2 большой',
       imgs: [
         'https://gde.ru/images/img_ru/474x354/4f/bf/4fbf5dd8be584c0a2124b9534ac923ce.jpg',
@@ -40,6 +42,7 @@ export function Houses() {
       },
     },
     {
+      id: 3,
       title: 'Дом 3 большой',
       imgs: [
         'https://gde.ru/images/img_ru/474x354/4f/bf/4fbf5dd8be584c0a2124b9534ac923ce.jpg',
@@ -56,6 +59,7 @@ export function Houses() {
       },
     },
     {
+      id: 4,
       title: 'Дом 4 большой',
       imgs: [
         'https://gde.ru/images/img_ru/474x354/4f/bf/4fbf5dd8be584c0a2124b9534ac923ce.jpg',
@@ -72,6 +76,7 @@ export function Houses() {
       },
     },
     {
+      id: 5,
       title: 'Дом 5 большой',
       imgs: [
         'https://gde.ru/images/img_ru/474x354/4f/bf/4fbf5dd8be584c0a2124b9534ac923ce.jpg',
@@ -88,6 +93,7 @@ export function Houses() {
       },
     },
     {
+      id: 6,
       title: 'Дом 6 большой',
       imgs: [
         'https://gde.ru/images/img_ru/474x354/4f/bf/4fbf5dd8be584c0a2124b9534ac923ce.jpg',
@@ -121,12 +127,8 @@ export function Houses() {
       {
         breakpoint: 320,
         settings: {
-          // rows: 1,
-          // slidesPerRow: 1000,
           slidesToShow: 1,
           slidesToScroll: 1,
-          // centerMode: true,
-          // variableWidth: true,
         },
       },
     ],
@@ -136,13 +138,11 @@ export function Houses() {
     <section className={styles.houses} id="houses">
       <div className="container">
         <Title text="Дома" />
-        {/* <div className={styles.housesItems}> */}
         <Slider {...settings}>
           {houses.map((house) => (
-            <HouseCard {...house} />
+            <HouseCard key={house.id} {...house} />
           ))}
         </Slider>
-        {/* </div> */}
       </div>
     </section>
   );

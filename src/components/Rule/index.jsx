@@ -11,11 +11,9 @@ export function Rule({ title, descr }) {
     <div className={styles.rule}>
       <div className={styles.ruleHeader}>
         <h3>{title}</h3>
-        <div>
-          <button onClick={() => setOpened((prev) => !prev)}>
-            <Open className={opened ? styles.active : ''} />
-          </button>
-        </div>
+        <button onClick={() => setOpened((prev) => !prev)}>
+          <Open className={opened ? styles.active : ''} />
+        </button>
       </div>
       {opened && <p>{descr}</p>}
     </div>
