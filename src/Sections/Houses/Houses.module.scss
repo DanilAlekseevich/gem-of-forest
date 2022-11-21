@@ -2,9 +2,7 @@
 @import '../../sass/mixins';
 
 .houses {
-  &Items {
-    // display: flex;
-    // justify-content: space-between;
+    // height: 650px;
     margin-top: 40px;
 
     :global {
@@ -45,5 +43,16 @@
         border-radius: 30px;
       }
     }
-  }
+
+    @media (max-width: 1020px) {
+      :global {
+        .slick-prev {
+          left: 1%;
+        }
+
+        .slick-next {
+          right: 1%;
+        }
+      }
+    }
 }

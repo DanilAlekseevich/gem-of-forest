@@ -27,4 +27,9 @@
     line-height: 24px;
     padding-left: 22px;
   }
+
+  @media (max-width: 320px) {
+    width: 280px;
+    
+  }
 }

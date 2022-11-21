@@ -1,15 +1,10 @@
 @import '../../sass/variables';
 
 .review {
-  &Wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-
   :global {
-    .slick-slider {
-      width: 100%;
-    }
+    // .slick-slider {
+    //    width: 100%;
+    // }
 
     .slick-arrow {
       top: 50%;
@@ -26,6 +21,10 @@
         font-size: 30px;
         opacity: 1;
       }
+
+      @media (max-width: 1020px) {
+        left: 0%;
+      }
     }
 
     .slick-next {
@@ -37,6 +36,10 @@
         color: $blue;
         font-size: 30px;
         opacity: 1;
+      }
+
+      @media (max-width: 1020px) {
+        right: 0;
       }
     }
 
