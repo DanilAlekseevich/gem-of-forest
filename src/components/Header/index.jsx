@@ -13,25 +13,29 @@ export function Header() {
     setOpened((prev) => !prev);
   };
 
+  const onClickLink = () => {
+    setOpened((prev) => !prev);
+  };
+
   return (
     <header className={styles.header}>
       <div className="container">
         <MainLogo />
         <nav>
           <ul className={`${styles.headerLinks} ${opened ? styles.headerLinksActive : ''}`}>
-            <li>
+            <li onClick={onClickLink}>
               <a href="#houses">Дома</a>
             </li>
-            <li>
+            <li onClick={onClickLink}>
               <a href="#about">О нас</a>
             </li>
-            <li>
+            <li onClick={onClickLink}>
               <a href="#rules">Правила</a>
             </li>
-            <li>
+            <li onClick={onClickLink}>
               <a href="#way">Маршрут</a>
             </li>
-            <li>
+            <li onClick={onClickLink}>
               <a href="#contacts">Контакты</a>
             </li>
             <li>
