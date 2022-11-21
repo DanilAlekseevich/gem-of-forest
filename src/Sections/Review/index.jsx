@@ -53,10 +53,26 @@ export function Review() {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
+          slidesToScroll: 2,
           centerMode: true,
           variableWidth: true,
           rows: 1,
+        },
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+          variableWidth: false,
+        },
+      },
+      {
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
         },
       },
     ],
@@ -66,13 +82,11 @@ export function Review() {
     <section className={styles.review}>
       <div className="container">
         <Title text="Отзывы" />
-        {/* <div className={styles.reviewWrapper}> */}
         <Slider {...settings}>
           {reviews.map((review, i) => (
             <ReviewCard key={i} {...review} />
           ))}
         </Slider>
-        {/* </div> */}
       </div>
     </section>
   );

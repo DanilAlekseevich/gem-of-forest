@@ -1,3 +1,5 @@
+@import '../../sass/variables';
+
 .promoCard {
   width: calc(98% / 2);
   height: 360px;
@@ -7,11 +9,11 @@
   div {
     display: inline-block;
     padding: 10px;
-    border: 1px solid white;
+    border: 1px solid $white;
     border-radius: 40px;
     font-family: 'Freigeist';
     font-size: 20px;
-    color: white;
+    color: $white;
   }
 
   @media (max-width: 1020px) {

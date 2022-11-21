@@ -119,7 +119,7 @@ export function Houses() {
         },
       },
       {
-        breakpoint: 330,
+        breakpoint: 320,
         settings: {
           // rows: 1,
           // slidesPerRow: 1000,
