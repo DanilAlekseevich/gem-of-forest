@@ -2,7 +2,6 @@ import React from 'react';
 
 import { ReactComponent as MainLogo } from '../../assets/img/mainLogo.svg';
 import { ReactComponent as VkSvg } from '../../assets/vk.svg';
-import { ReactComponent as InstSvg } from '../../assets/inst.svg';
 
 import styles from './Footer.module.scss';
 
@@ -14,9 +13,6 @@ export function Footer() {
         <div className={styles.footerSocial}>
           <a href="#">
             <VkSvg />
-          </a>
-          <a href="#">
-            <InstSvg />
           </a>
         </div>
         <div className={styles.footerInfo}>

@@ -33,3 +33,34 @@
     background: lighten($blue, 5%)
   }
 }
+
+@mixin slider {
+  :global {
+    .slick-arrow {
+      top: 50%;
+      z-index: 1;
+    }
+
+    .slick-prev {
+      left: 2% !important;
+
+      &:before {
+        color: $white !important;
+        opacity: 1;
+      }
+    }
+
+    .slick-next {
+      right: 2% !important;
+
+      &:before {
+        color: $white !important;
+        opacity: 1;
+      }
+    }
+
+    .slick-list {
+      border-radius: 30px;
+    }
+  }
+}

@@ -1,8 +1,46 @@
 @import '../../sass/variables';
 
 .review {
-  &Wrapper {
-    display: flex;
-    justify-content: space-between;
+  :global {
+    .slick-arrow {
+      top: 50%;
+      z-index: 1;
+    }
+
+    .slick-prev {
+      left: 0%;
+      width: 30px;
+      height: 30px;
+
+      &:before {
+        color: $blue;
+        font-size: 30px;
+        opacity: 1;
+      }
+
+      @media (max-width: 1020px) {
+        left: 0%;
+      }
+    }
+
+    .slick-next {
+      right: 0%;
+      width: 30px;
+      height: 30px;
+
+      &:before {
+        color: $blue;
+        font-size: 30px;
+        opacity: 1;
+      }
+
+      @media (max-width: 1020px) {
+        right: 0;
+      }
+    }
+
+    .slick-list {
+      border-radius: 30px;
+    }
   }
 }

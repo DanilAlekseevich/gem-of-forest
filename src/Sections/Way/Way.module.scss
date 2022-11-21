@@ -1,6 +1,12 @@
 @import '../../sass/variables';
 
 .way {
+
+  :global {
+    .ymaps-2-1-79-inner-panes {
+      border-radius: 40px;
+    }
+  }
   &Text {
     display: flex;
     justify-content: space-between;

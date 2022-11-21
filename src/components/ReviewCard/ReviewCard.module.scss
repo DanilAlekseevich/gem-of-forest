@@ -1,7 +1,10 @@
+@import '../../sass/variables';
+
 .reviewCard {
   width: 380px;
   height: 450px;
-  background-color: white;
+  margin: 0 10px;
+  background-color: $white;
   border-radius: 40px;
   padding: 25px 49px 25px 25px;
 
@@ -25,5 +28,14 @@
     font-size: 18px;
     line-height: 24px;
     padding-left: 22px;
+  }
+
+  @media (max-width: 640px) {
+    margin: 0 auto;
+  }
+
+  @media (max-width: 320px) {
+    width: 280px;
+    
   }
 }
