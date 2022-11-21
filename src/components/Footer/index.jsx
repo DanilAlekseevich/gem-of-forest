@@ -15,9 +15,9 @@ export function Footer() {
           <a href="#">
             <VkSvg />
           </a>
-          <a href="#">
+          {/* <a href="#">
             <InstSvg />
-          </a>
+          </a> */}
         </div>
         <div className={styles.footerInfo}>
           <a href="tel:+79176059706">+7 (917) 605-97-06</a>

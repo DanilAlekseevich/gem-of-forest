@@ -56,32 +56,5 @@
     margin-bottom: 5px;
   }
 
-  :global {
-
-    .slick-arrow {
-      top: 50%;
-      z-index: 1;
-    }
-
-    .slick-prev {
-      left: 2%;
-
-      &:before {
-        opacity: 1;
-      }
-    }
-
-    .slick-next {
-      right: 2%;
-
-      &:before {
-        opacity: 1;
-      }
-    }
-
-    .slick-list {
-      border-radius: 30px;
-    }
-  }
-
+  @include slider;
 }
