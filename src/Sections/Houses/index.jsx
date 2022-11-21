@@ -60,6 +60,7 @@ export function Houses() {
   const settings = {
     slidesToShow: 2,
     slidesToScroll: 2,
+    // centerMode: true,
     // variableWidth: true,
   };
 

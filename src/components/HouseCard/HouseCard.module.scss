@@ -2,9 +2,9 @@
 @import '../../sass/mixins';
 
 .house {
-  width: 595px;
+  width: 590px;
+  margin: 0 5px;
   position: relative;
-  // width: calc(100% / 2);
   max-height: 750px;
   background-color: #fff;
   border-radius: 35px;
