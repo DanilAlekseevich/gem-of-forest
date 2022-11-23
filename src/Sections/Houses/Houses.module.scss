@@ -2,7 +2,21 @@
 @import '../../sass/mixins';
 
 .houses {
-    margin-top: 40px;
+  margin-top: 40px;
+
+  &Items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    // &:last-child {
+    //   background-color: red;
+    // }
+
+    @media (max-width: 640px) {
+      justify-content: center;
+    }
+  }
 
     :global {
       .slick-slider {
