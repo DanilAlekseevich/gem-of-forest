@@ -7,8 +7,8 @@ export function HouseCard({ title, imgs, capacity, descr, cost }) {
   return (
     <div className={styles.house}>
       <Slider>
-        {imgs.map((img) => (
-          <img src={img} alt="Дом" />
+        {imgs.map((img, i) => (
+          <img key={i} src={img} alt="Дом" />
         ))}
       </Slider>
       <div className={styles.houseText}>

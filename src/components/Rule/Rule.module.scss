@@ -17,14 +17,16 @@
     }
 
     button {
+      display: flex;
       background-color: $blue;
       border: none;
       border-radius: 100%;
-      width: 21px;
-      height: 21px;
+      width: 24px;
+      height: 24px;
       cursor: pointer;
 
       svg {
+        height: 100%;
         transition: all 0.3s ease-in-out;
       }
     }

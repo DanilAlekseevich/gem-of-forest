@@ -32,8 +32,8 @@ export function Gallery() {
         </div>
         <div className={styles.gallerySlider}>
           <Slider {...settings}>
-            {images.map((img) => (
-              <img src={img} alt="Фото" />
+            {images.map((img, i) => (
+              <img key={i} src={img} alt="Фото" />
             ))}
           </Slider>
         </div>

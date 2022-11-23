@@ -3,12 +3,16 @@
 
 .house {
   width: 590px;
-  margin: 0 5px;
+  margin-bottom: 10px;
   position: relative;
   max-height: 750px;
   background-color: $white;
   border-radius: 35px;
   padding-bottom: 35px;
+
+  &:last-child:nth-child(2n+1) {
+    margin: 0 auto;
+  }
   
   img {
     width: 100%;
