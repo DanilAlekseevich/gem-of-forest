@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 
 import styles from './HouseCard.module.scss';
 
-export function HouseCard({ title, imgs, capacity, descr, cost }) {
+export function HouseCard({ title, imgs, capacity, descr, cost, showModal }) {
   return (
     <div className={styles.house}>
       <Slider>
@@ -25,7 +25,7 @@ export function HouseCard({ title, imgs, capacity, descr, cost }) {
           Почасово (минимум 2 часа):
           <b> {cost.hourly} ₽/час</b>
         </div>
-        <button>Забронировать</button>
+        <button onClick={showModal}>Забронировать</button>
       </div>
     </div>
   );
