@@ -75,7 +75,7 @@ export function Review() {
         },
       },
       {
-        breakpoint: 320,
+        breakpoint: 400,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

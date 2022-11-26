@@ -29,9 +29,9 @@ function App() {
     <div className="App">
       <Modal open={modalOpen} close={closeModal} />
       <Header />
-      <Main showModal={showModal} />
+      <Main />
       <Actions />
-      <Houses />
+      <Houses showModal={showModal} />
       <About />
       <Review />
       <Promo />
