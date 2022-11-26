@@ -8,12 +8,20 @@
   }
 
   @media (max-width: 640px) {
+<<<<<<< HEAD
     padding-top: 120px;
     margin-top: 0;
   }
 
   @media (max-width: 320px) {
     padding-top: 80px;
+=======
+    margin-top: 50px;
+  }
+
+  @media (max-width: 320px) {
+    margin-top: 30px;
+>>>>>>> d1b0c95e41360bcc459409d0f630593869b67424
   }
 }
 

@@ -33,7 +33,7 @@
 
     p {
       font-family: 'Inter';
-      font-weight: 400px;
+      font-weight: 400;
       font-size: 18px;
       color: $black;
       margin-bottom: 15px;
@@ -55,16 +55,14 @@
 
   &Price {
     font-family: 'Inter';
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 18px;
     color: $black;
     margin-bottom: 5px;
   }
 
-  @include slider;
-
   @media (max-width: 640px) {
-    width: 445px;
+    width: 320px;
 
     &Capacity {
       margin-bottom: 12px;
