@@ -12,15 +12,10 @@ section {
 }
 
 .container {
-  // width: calc(100vw - 25vw);
   width: 1200px;
   margin: 0 auto;
 
-  @media (max-width: 1300px) {
-    width: calc(100vw - 20vh);
-  }
-
-  @media (max-width: 1170px) {
+  @media (max-width: 1220px) {
     width: calc(100vw - 15vh);
   }
 
