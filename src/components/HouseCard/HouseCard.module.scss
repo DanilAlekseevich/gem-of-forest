@@ -9,7 +9,7 @@
   background-color: $white;
   border-radius: 35px;
   padding-bottom: 35px;
-  box-shadow:  100px 100px 80px rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 
   &:last-child:nth-child(2n+1) {
     margin: 0 auto;
@@ -96,7 +96,7 @@
   }
 
   @media (max-width: 400px) {
-    width: 280px;
+    width: 100%;
     
     &Text {
       h4 {
