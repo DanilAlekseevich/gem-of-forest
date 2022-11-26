@@ -1,21 +1,7 @@
 @import './variables';
 
 @mixin mar-t-section {
-  margin-top: 160px;
-
-  @media (max-width: 1020px) {
-    margin-top: 140px;
-  }
-
-  @media (max-width: 640px) {
-    padding-top: 50px;
-    margin-top: 0;
-  }
-
-  @media (max-width: 320px) {
-    padding-top: 30px;
-    margin-top: 30px;
-  }
+  margin-top: 50px;
 }
 
 @mixin btn {
