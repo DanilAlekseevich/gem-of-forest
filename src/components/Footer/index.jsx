@@ -11,7 +11,7 @@ export function Footer() {
       <div className="container">
         <MainLogo />
         <div className={styles.footerSocial}>
-          <a href="#">
+          <a href="https://vk.com/zhemchuzhina.lesa73">
             <VkSvg />
           </a>
         </div>
