@@ -5,7 +5,7 @@ import { Main } from './Sections/Main';
 import { Actions } from './Sections/Actions';
 import { Houses } from './Sections/Houses';
 import { About } from './Sections/About';
-import { Review } from './Sections/Review';
+// import { Review } from './Sections/Review';
 import { Promo } from './Sections/Promo';
 import { Gallery } from './Sections/Gallery';
 import { Way } from './Sections/Way';
@@ -33,7 +33,7 @@ function App() {
       <Actions />
       <Houses showModal={showModal} />
       <About />
-      <Review />
+      {/*<Review />*/}
       <Promo />
       <Gallery />
       <Way />
