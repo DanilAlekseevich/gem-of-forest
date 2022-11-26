@@ -1,5 +1,4 @@
 import React from 'react';
-// import Slider from 'react-slick';
 
 import { Title } from '../../components/Title';
 import { HouseCard } from '../../components/HouseCard';
@@ -60,40 +59,10 @@ export function Houses() {
     },
   ];
 
-  // const settings = {
-  //   slidesToShow: 2,
-  //   slidesToScroll: 2,
-  //   responsive: [
-  //     {
-  //       breakpoint: 1024,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         slidesToScroll: 1,
-  //         centerMode: true,
-  //         variableWidth: true,
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 320,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         slidesToScroll: 1,
-  //       },
-  //     },
-  //   ],
-  // };
-
-  const isEven = houses.length % 2 === 0;
-
   return (
     <section className={styles.houses} id="houses">
       <div className="container">
         <Title text="Дома" />
-        {/* <Slider {...settings}>
-          {houses.map((house) => (
-            <HouseCard key={house.id} {...house} />
-          ))}
-        </Slider> */}
         <div className={styles.housesItems}>
           {houses.map((item) => (
             <HouseCard key={item.id} {...item} />
